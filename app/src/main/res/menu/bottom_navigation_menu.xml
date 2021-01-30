@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_diary"
+        android:icon="@drawable/ic_baseline_library_books_24"
+        android:title="Diary" >
+
+    </item>
+
+    <item
+        android:id="@+id/navigation_to_do"
+        android:icon="@drawable/ic_baseline_list_24"
+        android:title="To-Do" >
+
+    </item>
+
+</menu>
