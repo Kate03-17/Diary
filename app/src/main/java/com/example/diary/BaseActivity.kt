@@ -15,12 +15,12 @@ class BaseActivity : AppCompatActivity() {
 
         val navView: BottomNavigationView = findViewById(R.id.naw_view)
 
-        val navControler = findNavController(R.id.nav_host_fragment)
+        val navController = findNavController(R.id.nav_host_fragment)
 
         val appbarConfig = AppBarConfiguration(setOf(
             R.id.fragmentDiary, R.id.fragmentToDo
         ))
-        setupActionBarWithNavController(navControler, appbarConfig)
-        navView.setupWithNavController(navControler)
+        setupActionBarWithNavController(navController, appbarConfig)
+        navView.setupWithNavController(navController)
     }
 }

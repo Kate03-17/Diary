@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Diary">
-        <activity android:name=".MemoryActivity"></activity>
+        <activity android:name=".recyclerActivity"></activity>
+        <activity android:name=".MemoryActivity" />
         <activity android:name=".BaseActivity" />
         <activity android:name=".RegistrationActivity" />
         <activity android:name=".RegistrationActiviy" />
