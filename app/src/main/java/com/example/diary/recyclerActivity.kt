@@ -2,13 +2,9 @@ package com.example.diary
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.TextView
-import androidx.core.content.ContentProviderCompat.requireContext
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
-import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_recycler.*
-import kotlinx.android.synthetic.main.activity_recycler.*
+
 
 class recyclerActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

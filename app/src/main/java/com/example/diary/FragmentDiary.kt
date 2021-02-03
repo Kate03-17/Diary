@@ -19,7 +19,8 @@ class FragmentDiary: Fragment(R.layout.fragment_diary) {
             if (dateEditText.text.toString().isEmpty() || personNameEditText.text.toString().isEmpty() || diaryEditText.text.toString().isEmpty()) {
                 Toast.makeText(this.context, "Empty", Toast.LENGTH_SHORT).show()
             }else {
-                (application as App).notes.add(Note(personNameEditText.text.toString(), dateEditText.text.toString().toInt(), diaryEditText.text.toString()))
+
+                (activity?.application as App).notes.add(Note(personNameEditText.text.toString(), dateEditText.text.toString().toInt(), diaryEditText.text.toString()))
                 dateEditText.text?.clear()
                 personNameEditText.text?.clear()
                 diaryEditText.text?.clear()
