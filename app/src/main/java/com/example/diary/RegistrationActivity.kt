@@ -13,7 +13,7 @@ class RegistrationActivity : AppCompatActivity() {
     private lateinit var signUpEmail: EditText
     private lateinit var signUpPassword: EditText
     private lateinit var signUpButton: Button
-    private lateinit var registerButton: Button
+    private lateinit var signInButton: Button
 
     private lateinit var mAuth: FirebaseAuth
 
@@ -26,7 +26,7 @@ class RegistrationActivity : AppCompatActivity() {
         signUpEmail = findViewById(R.id.signUpEmailEditText)
         signUpPassword = findViewById(R.id.signUpPasswordEditText)
         signUpButton = findViewById(R.id.signUpButton)
-        registerButton = findViewById(R.id.goToRegistrationButton)
+        signInButton = findViewById(R.id.goToSignIn)
 
         signUpButton.setOnClickListener {
 
@@ -49,7 +49,7 @@ class RegistrationActivity : AppCompatActivity() {
 
         }
 
-        registerButton.setOnClickListener {
+        signInButton.setOnClickListener {
             startActivity(Intent(this, MainActivity :: class.java))
         }
     }
