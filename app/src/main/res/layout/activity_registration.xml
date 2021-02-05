@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FCF7DE"
     tools:context=".RegistrationActivity">
 
 
@@ -40,6 +41,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
+            app:backgroundTint="#9E9060"
             android:text="Register" />
 
         <Button
@@ -47,6 +49,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
+            app:backgroundTint="#9E9060"
             android:text="Sign in" />
     </LinearLayout>
 

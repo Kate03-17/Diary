@@ -1,21 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout      xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#FCF7DE"
+tools:context=".MainActivity">
+<TextView
+    android:id="@+id/textView"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:padding="10dp"
+    android:text="My List"
+    android:textColor="#F9968B"
+    android:textSize="26dp" />
+<EditText
+    android:layout_below="@id/textView"
+    android:id="@+id/editText"
+    android:padding="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Add Task"
+    android:textColorHint="@color/black"
+    android:textColor="@color/black"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/linearLayout1"
+    android:orientation="horizontal"
+    android:layout_below="@id/editText"
+    android:padding="10dp">
 
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/add"
+        android:layout_width="160dp"
         android:layout_height="wrap_content"
-        android:text="To-DO"
-        android:textColor="@color/black"
-        android:textSize="40dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        app:backgroundTint="#9E9060"
+        android:text="Add" />
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        app:backgroundTint="#9E9060"
+        android:text="Clear" />
+
+</LinearLayout>
+<ListView
+    android:id="@+id/listView"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_below="@id/linearLayout1"
+    android:choiceMode="multipleChoice" />
+
+</RelativeLayout>
